@@ -23,8 +23,10 @@ strong {
 }
 
 a {
-  background: #34d0e7;
   text-decoration:underline;
+}
+pre {
+  color:#b20000;
 }
 
 img {
@@ -111,10 +113,41 @@ window.onload = function() {
 
 <body>
 <div>web maps!</div>
-<div>google maps photo</div>
-<div><em>open source</em> web maps!</div>
-<div>all the photos</div>
+<div><img src="img/gmaps.png"></div>
+<div>
+  <em>open source</em> web maps!
+</div>
+<div>
+  <ul>
+    <li>access to the <em>source code</em></li>
+    <li><strong>community</strong> driven</li>
+    <li>following <em>data standards</em></li>
+    <li>updates, releases, bug fixes, <strong>documentation</strong></li>
+  </ul>
+</div>
 <div>connecting your <em>data</em> to the <strong>browser</strong></div>
+<div>data formats are <em>different</em> on the web, compared to Arc or QGIS</div>
+<div class="center">Introducing<br><strong>GeoJSON</strong></div>
+<div>spatial javascript object derived from <strong>JSON</strong><br><em>J</em>ava<em>S</em>cript <em>O</em>bject <em>N</em>otation</div>
+<div>Has a specific structure:
+  <pre>
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+    "name": "Dinagat Islands"
+  }
+}</pre>
+</div>
+<div class="center" style="background:url(img/transform.gif) repeat top left;">Shapefiles<br>to<br>GeoJSON</div>
+<div>Remember when ______ talked about <strong>QGIS</strong>?<br>You can save your data as GeoJSON right there!<br><img src="img/qgis.png"></div>
+
+<!-- example time! -->
+<div><img src="img/ned.png">Natural<br>Earth<br><a href="http://naturalearthdata.com" target="_blank">Data</a></div>
+
 
 
 
