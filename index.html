@@ -21,6 +21,9 @@ em, a {
 strong {
 	color:#cc8400;
 }
+small {
+  font-size:.4em;
+}
 
 a {
   text-decoration:underline;
@@ -126,7 +129,7 @@ window.onload = function() {
   </ul>
 </div>
 <div>connecting your <em>data</em> to the <strong>browser</strong></div>
-<div>data formats are <em>different</em> on the web, compared to Arc or QGIS</div>
+<div>data formats are <em>different</em> on the web<br><small>variables, arrays, databases</small></div>
 <div class="center">Introducing<br><strong>GeoJSON</strong></div>
 <div>spatial javascript object derived from <strong>JSON</strong><br><em>J</em>ava<em>S</em>cript <em>O</em>bject <em>N</em>otation</div>
 <div>Has a specific structure:
@@ -141,6 +144,7 @@ window.onload = function() {
     "name": "Dinagat Islands"
   }
 }</pre>
+check out <a href="http://geojson.org/" target="_blank">geojson.org</a>
 </div>
 <div class="center" style="background:url(img/transform.gif) repeat top left;">Shapefiles<br>to<br>GeoJSON</div>
 <div>Remember when ______ talked about <strong>QGIS</strong>?<br>You can save your data as GeoJSON right there!<br><img src="img/qgis.png"></div>
